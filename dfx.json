@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "projekcik_backend": {
+      "candid": "src/projekcik_backend/projekcik_backend.did",
+      "package": "projekcik_backend",
+      "type": "rust"
+    },
+    "projekcik_frontend": {
+      "dependencies": [
+        "projekcik_backend"
+      ],
+      "source": [
+        "src/projekcik_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "projekcik_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
